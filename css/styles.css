@@ -15,7 +15,6 @@ body {
     height: 100%;
     text-align: center;
     background: rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease;
 }
 
 
@@ -133,4 +132,18 @@ button {
 }
 button:hover {
 	background:#fff;
+}
+/* for IE8 */
+@media all\0 { 
+	.lightbox {
+		background:transparent url(http://www.dkipps.com/temp/lightbox/bg.png) no-repeat left -50px;
+	}
+} 
+/* for small screens */
+@media (max-width:400px) {
+	.modal {
+		width: auto;
+		margin-left:30px;
+		margin-right:30px;
+}	
 }
