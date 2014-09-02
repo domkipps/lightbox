@@ -51,7 +51,7 @@ body {
 	font-size:22px;
 	width:22px;
 	height: 22px;
-	background:transparent url(../images/sprite.png) no-repeat;
+	background:transparent url(http://www.dkipps.com/temp/lightbox/sprite.png) no-repeat;
 }
 .modal h3 span:hover {
 	cursor:pointer;
@@ -77,10 +77,10 @@ body {
 	height: 15px;
 	width:0;
 	margin-top:-1px;
-	background: #67a4d0 url(../images/sprite.png) repeat-x left -100px;
+	background: #67a4d0 url(http://www.dkipps.com/temp/lightbox/sprite.png) repeat-x left -100px;
 }
 .complete .progress .percent {
-	background: #00b000 url(../images/sprite.png) repeat-x left -115px;
+	background: #00b000 url(http://www.dkipps.com/temp/lightbox/sprite.png) repeat-x left -115px;
 }
 .modal .progress .progress-active { /* CSS transitions not used as IE 8 */
      -webkit-transition:2s linear all;
@@ -100,7 +100,7 @@ body {
 	width:20px;
 	height: 20px;
 	display: inline-block;
-	background:transparent url(../images/sprite.png) no-repeat left -50px;
+	background:transparent url(http://www.dkipps.com/temp/lightbox/sprite.png) no-repeat left -50px;
 }
 button {
 	display: none;
@@ -114,7 +114,7 @@ button {
 	margin:50px;
 }
 button span {
-	background:transparent url(../images/sprite.png) no-repeat -50px 0;
+	background:transparent url(http://www.dkipps.com/temp/lightbox/sprite.png) no-repeat -50px 0;
 	width:17px;
 	height:16px;
 	display:block;
