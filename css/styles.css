@@ -5,19 +5,24 @@ body {
 	font:14px/1.5 sans-serif; 
 }
 
-
 .lightbox {
-    position: fixed;
+	position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
     width: 100%;
     height: 100%;
     text-align: center;
-    background: rgba(0, 0, 0, 0.1);
+    background:rgb(0,0,0);
+	background: transparent\9;
+	background:rgba(0,0,0,0.1);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000,endColorstr=#19000000);
+	zoom: 1;
 }
-
-
+}
+.div:nth-child(n) {
+	filter: none;
+}
 .modal {
 	width: 300px;
 	border:1px solid #ddd;
@@ -27,7 +32,6 @@ body {
 	transform: translateY(-50%);
 	border:1px solid #ddd;
 }	
-
 .modal h3 {
 	position: relative;
 	background:#808080;
@@ -47,7 +51,7 @@ body {
 	font-size:22px;
 	width:22px;
 	height: 22px;
-	background:transparent url(http://www.dkipps.com/temp/lightbox/sprite.png) no-repeat;
+	background:transparent url(../images/sprite.png) no-repeat;
 }
 .modal h3 span:hover {
 	cursor:pointer;
@@ -61,29 +65,9 @@ body {
 	padding:18px 0;
 	position: relative;
 }
-.modal-body span#reload {
-	position:absolute;
-}
-.modal-body span#reload {
-	background:#fff;
-	background:transparent url(http://www.dkipps.com/temp/lightbox/sprite.png) no-repeat -50px 0;
-	width:17px;
-	height:16px;
-	display:block;
-	position: absolute;
-	left:5px;
-	bottom:5px;
-}
-.modal-body span#reload:hover {
-	background-position:-50px -16px;
-	cursor:pointer;
-}
-.modal-body span#reload strong {
-	display:none;
-}
 .modal .progress {
 	width:160px;
-	height: 15px;
+	height: 14px;
 	border: 1px solid #ddd;
 	margin: 0 auto 16px auto;
 	position: relative;
@@ -92,13 +76,13 @@ body {
 	display: block;
 	height: 15px;
 	width:0;
-	background: #67a4d0 url(http://www.dkipps.com/temp/lightbox/sprite.png) repeat-x left -100px;
+	margin-top:-1px;
+	background: #67a4d0 url(../images/sprite.png) repeat-x left -100px;
 }
 .complete .progress .percent {
-	background: #00b000 url(http://www.dkipps.com/temp/lightbox/sprite.png) repeat-x left -115px;
+	background: #00b000 url(../images/sprite.png) repeat-x left -115px;
 }
-
-.modal .progress .progress-active {
+.modal .progress .progress-active { /* CSS transitions not used as IE 8 */
      -webkit-transition:2s linear all;
   	transition:2s linear all;
    	width:160px !important;
@@ -116,29 +100,31 @@ body {
 	width:20px;
 	height: 20px;
 	display: inline-block;
-	background:transparent url(http://www.dkipps.com/temp/lightbox/sprite.png) no-repeat left -50px;
+	background:transparent url(../images/sprite.png) no-repeat left -50px;
 }
 button {
 	display: none;
-	padding: 6px 12px;
+	padding: 6px;
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
 	border-radius: 4px;
-	background:#fff;
 	border:1px solid #ddd;
 	background:#efefef;
 	margin:50px;
 }
+button span {
+	background:transparent url(../images/sprite.png) no-repeat -50px 0;
+	width:17px;
+	height:16px;
+	display:block;
+	float:left;
+	margin-right:5px;
+	margin-top:-1px;
+}
 button:hover {
 	background:#fff;
 }
-/* for IE8 */
-@media all\0 { 
-	.lightbox {
-		background:transparent url(http://www.dkipps.com/temp/lightbox/bg.png) no-repeat left -50px;
-	}
-} 
 /* for small screens */
 @media (max-width:400px) {
 	.modal {
